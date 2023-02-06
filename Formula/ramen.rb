@@ -5,20 +5,20 @@
 class Ramen < Formula
   desc "A graphic CLI for interaction with Ethereum easily and happily."
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dyng/ramen/releases/download/v0.1.0/ramen_Darwin_arm64.tar.gz"
-      sha256 "14587c7709498d72c450f4ad743fb7fede247b5dec62b7c17cbbb412b399395b"
+      url "https://github.com/dyng/ramen/releases/download/v0.1.1/ramen_Darwin_arm64.tar.gz"
+      sha256 "2ec0e2feb13373ea7676c1e045b39092dbc6293eee909b1c84ec82b2dd9823af"
 
       def install
         bin.install "ramen"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dyng/ramen/releases/download/v0.1.0/ramen_Darwin_x86_64.tar.gz"
-      sha256 "127027385f4f6deb76595efe84a0dda587b0493530f071cc47fe50d947876001"
+      url "https://github.com/dyng/ramen/releases/download/v0.1.1/ramen_Darwin_x86_64.tar.gz"
+      sha256 "229b3fb6c81d81239c2d3e6e02aa910780e05271efdb4b79b9fd75053156bf13"
 
       def install
         bin.install "ramen"
@@ -28,16 +28,16 @@ class Ramen < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dyng/ramen/releases/download/v0.1.0/ramen_Linux_arm64.tar.gz"
-      sha256 "00a9e65352fa8182343637ff6fb4b4f5b6124a55788b2c01f7e66caf317842ea"
+      url "https://github.com/dyng/ramen/releases/download/v0.1.1/ramen_Linux_arm64.tar.gz"
+      sha256 "b9da0aa09dfff89cefbc28b232e9dfb5d5564f1493c4eae745adaa1a5a329066"
 
       def install
         bin.install "ramen"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dyng/ramen/releases/download/v0.1.0/ramen_Linux_x86_64.tar.gz"
-      sha256 "7cc28190427f10c0c801b352360d3dfe5340775a05db52b154869272497d4384"
+      url "https://github.com/dyng/ramen/releases/download/v0.1.1/ramen_Linux_x86_64.tar.gz"
+      sha256 "90c19c785881bd77e6113923ad52788c4ed7e16a06b14da3306244654737605d"
 
       def install
         bin.install "ramen"
