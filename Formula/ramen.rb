@@ -5,42 +5,42 @@
 class Ramen < Formula
   desc "A graphic CLI for interaction with Ethereum easily and happily."
   homepage ""
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dyng/ramen/releases/download/v0.2.0/ramen_Darwin_arm64.tar.gz"
-      sha256 "d00a47d39c33e617d248b85319000234c17036f8800fb1f340f3f3deb51e9122"
+      url "https://github.com/dyng/eth-ramen/releases/download/v0.2.1/eth-ramen_Darwin_arm64.tar.gz"
+      sha256 "d0b34d80df5c8359a7fdf79873c46d3046e064524987b76a4bb4223c69dbccba"
 
       def install
-        bin.install "ramen"
+        bin.install "eth-ramen"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dyng/ramen/releases/download/v0.2.0/ramen_Darwin_x86_64.tar.gz"
-      sha256 "0abb2b9ba985fbae61db608b450fa8aa0b086f88b03c9a757313f0afc506276f"
+      url "https://github.com/dyng/eth-ramen/releases/download/v0.2.1/eth-ramen_Darwin_x86_64.tar.gz"
+      sha256 "4a0877441f112ca96328958b9d691a84d14a70af886d47a53181164f3b20cb07"
 
       def install
-        bin.install "ramen"
+        bin.install "eth-ramen"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dyng/ramen/releases/download/v0.2.0/ramen_Linux_arm64.tar.gz"
-      sha256 "d48b775f102c5efbf7b6d6141a345673f1489c86f730d6f6d1820cabc3388531"
+      url "https://github.com/dyng/eth-ramen/releases/download/v0.2.1/eth-ramen_Linux_arm64.tar.gz"
+      sha256 "b307625e649b48f656b350f4c2523b146c93b24eb060aef859733ac5c67381d8"
 
       def install
-        bin.install "ramen"
+        bin.install "eth-ramen"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dyng/ramen/releases/download/v0.2.0/ramen_Linux_x86_64.tar.gz"
-      sha256 "925d9c93acc0b7736ee51434966ff735ada2551ec35d74bbbce70ba2bdaaf341"
+      url "https://github.com/dyng/eth-ramen/releases/download/v0.2.1/eth-ramen_Linux_x86_64.tar.gz"
+      sha256 "fa75050de6346ef045ed989c5329efa39623d304d793e121b0e080b1b422de12"
 
       def install
-        bin.install "ramen"
+        bin.install "eth-ramen"
       end
     end
   end
